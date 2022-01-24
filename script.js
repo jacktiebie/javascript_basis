@@ -1,16 +1,23 @@
 //getting the id #block and putting it in a variable called block
 var block = document.querySelector("#block")
 
-//asking question using prompt and putting the answer in var answer
-var answer = prompt("Which color do you prefer?");
+//asking question using prompt
+var answer = prompt("Which color is the background of the text");
+//right backgroundColor of text
+var trueColor = "yellow";
+
+//changing text to true else false
+if (answer == trueColor) {
+block.innerHTML = "True";
+}
+else {
+block.innerHTML = "False";
+}
 
 //changing background color using the variable block
 block
 .style
 .backgroundColor = "yellow";
-
-//changing background color with a prompt question
-block.style.backgroundColor = answer;
 
 //changing font-family using the variable block
 block
@@ -21,8 +28,5 @@ block
 block
 .style
 .margin = "15px";
-
-//changing text using the var block
-block.innerHTML = "Dit is tekst!";
 
 
